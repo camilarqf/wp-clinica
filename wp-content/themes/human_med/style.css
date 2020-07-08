@@ -1,0 +1,648 @@
+/*
+Theme Name: Human
+Theme URI: http://humanmed.com
+Author: Human Med
+Author URI: http://humanmed.com
+Description: Tema criado para a clínica Human Med
+Version: 1.0
+*/
+
+
+/* grid */
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+  }
+  
+  .container {
+      width: 1130px; /*960 default*/
+      margin: 0 auto;
+      padding: 0px;
+      position: relative;
+  }
+  
+  .container:after, .container:before {
+      content: " ";
+      display: table;
+  }
+  
+  .container:after {
+      clear: both;
+  }
+  
+  .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-1-3 {
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+  
+  .grid-1 	{width: 40px;}
+  .grid-2 	{width: 100px;}
+  .grid-3 	{width: 160px;}
+  .grid-4 	{width: 220px;}
+  .grid-5 	{width: 280px;}
+  .grid-6 	{width: 340px;}
+  .grid-7 	{width: 400px;}
+  .grid-8 	{width: 460px;}
+  .grid-9 	{width: 520px;}
+  .grid-10 	{width: 580px;}
+  .grid-11 	{width: 640px;}
+  .grid-12 	{width: 700px;}
+  .grid-13 	{width: 760px;}
+  .grid-14 	{width: 820px;}
+  .grid-15 	{width: 880px;}
+  .grid-16 	{width: 940px;}
+  .grid-1-3	{width: 300px;}
+  
+  @media only screen and (min-width: 768px) and (max-width: 1130px){
+  
+  .container {
+      width: 768px;	
+  }
+  .grid-1		{width: 28px;}
+  .grid-2		{width: 76px;}
+  .grid-3		{width: 124px;}
+  .grid-4		{width: 172px;}
+  .grid-5		{width: 220px;}
+  .grid-6		{width: 268px;}
+  .grid-7		{width: 316px;}
+  .grid-8		{width: 364px;}
+  .grid-9		{width: 412px;}
+  .grid-10	{width: 460px;}
+  .grid-11	{width: 508px;}
+  .grid-12	{width: 556px;}
+  .grid-13	{width: 604px;}
+  .grid-14	{width: 652px;}
+  .grid-15	{width: 700px;}
+  .grid-16	{width: 748px;}
+  .grid-1-3	{width: 236px;}
+  
+  }
+  
+  @media only screen and (max-width: 767px) {
+      .container {
+          width: 300px;	
+      }
+  
+      .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-1-3 {
+          width: 300px;
+          margin: 20px;
+          float: none;
+      }
+  }
+
+  
+/* estilo geral */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    /*responsivo*/
+}
+
+/* header */
+
+.vsc-initialized {
+    margin: 0;
+}
+
+.customize-support .menu {
+    margin-top: 32px;
+}
+
+.menu {
+    padding: 0px 10px;
+    position: fixed;
+    background-color: #533B30;
+    top: 0;
+    z-index: 10;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: .1em;
+    color: white;
+    transition: all 1s ease;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu ul li a:hover {
+    background-color: rgb(153, 115, 51, 0.5);
+    height: 64px;
+}
+
+.header img {
+    margin-top: 84px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+#mobile-nav li a{
+    color: #533B30;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#mobile-nav li a:hover{
+    color: white;
+    background:#533B30;
+    transition: all 0.7s ease;
+}
+
+#mobile-nav{
+    margin-top: 32px;
+}
+/*.menu {
+    text-align: right;
+    float: right;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 52px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .1em;
+    color: #533B30;
+    transition: all 1s ease;
+}
+
+.menu ul li a:hover {
+    color: rgb(153, 115, 51, 0.5);
+}
+*/
+
+.introducao {
+    
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+}
+
+.especialidades {
+    background: #A7742A;
+}
+
+.especialidades h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 60px;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+.especialidades h1:after {
+    display: block;
+    content: "";
+    background: white;
+    width: 50px;
+    height: 4px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 6px;
+}
+
+.lista01_espec, .lista02_espec, .lista03_espec {
+    color: white;
+    list-style-type: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
+}
+
+.lista01_espec ul, .lista02_espec ul, .lista03_espec ul {
+    padding-left: 0;
+    
+}
+
+.lista01_espec ul li, .lista02_espec ul li, .lista03_espec ul li {
+    padding-bottom: 15px;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.lista02_espec ul {
+    float: right;
+}
+
+.lista03_espec ul {
+    float: right;
+}
+
+.sobre {
+    background: #533B30;
+}
+
+.sobre h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 60px;
+    color: white;
+    letter-spacing: 0.1em;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.sobre h1:after {
+    display: block;
+    content: "";
+    background: white;
+    width: 50px;
+    height: 4px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 6px;
+}
+
+.sobre img {
+    margin-top: 40px;
+    width: 510px;
+}
+
+.sobre p {
+    color: white;
+    font-size: 16px;
+    margin-top: 40px;
+    text-indent: 40px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    font-weight: normal;
+    padding-left: 60px;
+}
+
+.clear {
+    clear: both;
+}
+
+.lista {
+    margin-top: 40px;
+}
+
+.lista ul {
+    list-style: none;
+}
+
+.lista p {
+    text-indent: 0;
+    text-align: center;
+}
+
+.visao, .missao, .valores {
+    padding-left: 40px;
+    margin: 0 auto;
+}
+
+.visao p, .missao p, .valores p {
+    padding-left: 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.visao h2, .missao h2, .valores h2 {
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}
+
+.visao h2:after, .missao h2:after, .valores h2:after {
+    display: block;
+    content: "";
+    background: white;
+    width: 25px;
+    height: 4px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 6px;
+}
+
+
+.medico {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.medico ul li img {
+    width: 178px;
+    height: 205px;
+    margin:40px auto auto auto;
+    
+  
+}
+
+.medico ul li ul{
+   text-align: center;
+    list-style: none;
+    padding-bottom: 40px;
+    width: 100%;
+    margin: 10px auto;
+   
+}
+
+.medico ul li {
+    
+    color: white;
+    font-weight: bold;
+    padding-bottom: 10px;
+    
+    
+}
+
+.formphp {
+    margin: 0;
+}
+
+.formphp label.nao-aparece, .formphp input.nao-aparece {
+    display: none !important;
+}
+
+#form-erro span, #form-send span {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+#form-send {
+    color: #31aa39;
+}
+
+#form-erro {
+    color: #f64540;
+}
+
+.contato label {
+    display: block;
+    font-weight: bold;
+    color: #533B30;
+    font-size: 16px;
+}
+
+.contato h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 24px;
+    color: #533B30;
+    font-weight: bold;
+}
+
+.contato input[type=text], .contato input[type=email] {
+    margin-top: 5px;
+    width: 498px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: none;
+    outline: none;
+    /*border: 1px solid; /*tirar efeito sombr* */
+    border: 1px solid #C4C4C4;
+    background: #C4C4C4;
+    font-size: 16px;
+    padding-left: 10px;
+    letter-spacing: 0.1em;
+}
+
+
+
+.contato textarea {
+    width: 510px;
+    height: 148px;
+    margin-top: 5px;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #C4C4C4;
+    background: #C4C4C4;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 4px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.wpcf7 input[type=submit] {
+    width: 153px;
+    height: 45px;
+    background: #533B30;
+    border-radius: 4px;
+    color: white;
+    border: 1px solid;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+}
+
+.wpcf7 input[type=submit]:hover {
+    background: #A7742A;
+    transition: all 2s ease;
+}
+
+#form {
+    margin-left: 0;
+}
+
+.footer {
+    background: #533B30;
+    width: 100%;
+    height: 80 px;
+}
+
+.footer p {
+    font-size: 12px;
+    color: white;
+    margin-left: 0;
+}
+
+.footer .redes_sociais ul{
+    margin-top: -5px;
+}
+
+.footer img {
+    width: 25px;
+    height: 25px;
+    float: right;
+    margin-left: 25px;
+}
+
+/* responsivo tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 1129px) {
+    /*.menu ul li a {
+        font-size: 12px;
+    }*/
+    .lista01_espec, .lista02_espec, .lista03_espec {
+        width: 33.33%;
+        margin: 0;
+    }
+    .sobre img {
+        margin-left: 130px;
+    }
+    .sobre p {
+        padding: 20px;
+        width: 100%;
+        margin-left: 0;
+    }
+    .visao, .missao, .valores {
+        width: 33.3%;
+        margin-top: 0;
+        padding: 0px 20px 20px 20px;
+    }
+    .medico ul li img {
+        width: 180px;
+        margin: 0 auto;
+        
+    }
+    .medico ul li ul {
+        padding: 0;
+        width: 300px;
+        margin-bottom: 40px;
+    }
+    .contato h2 {
+        margin-left: 20px;
+    }
+    .contato input[type=text], .contato input[type=email] {
+        width: 380px;
+    }
+    .contato textarea {
+        width: 392px;
+    }
+    .mapa iframe {
+        width: 400px;
+        height: 300px;
+        margin-left: 40px;
+        margin-top: 40px;
+        padding-left: 40px;
+    }
+    #form {
+        margin-right: 0;
+        width: 380px;
+        display: inline-block;
+        padding: 20px;
+    }
+    .telefone {
+        font-size: 14px;
+    }
+    .footer p {
+        margin-left: 20px;
+    }
+    .material-icons {
+        text-align: right;
+    }
+}
+
+
+/* responsivo smartphone */
+
+@media only screen and (max-width: 767px) {
+
+    #mobile-nav{
+        margin-top: 46px ;
+    }
+
+     .customize-support .menu{
+        margin-top: 46px ;
+    }
+
+    .header img {
+        margin: 50px 0 auto;
+        padding: 30px;
+    }
+    
+    .especialidades ul {
+        
+        font-size: 15px;
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    .sobre img{
+        margin-left: 0;
+    }
+
+    .sobre p{
+        padding: 0;
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .sobre ul li{
+        padding: 0;
+    }
+
+    .medico img{
+        float: none;
+        margin: 60px auto 10px ;
+    }
+
+    .medico ul{
+        margin: 0;
+        text-align: center;
+    }
+
+    .contato input[type=text], .contato input[type=email] {
+        width: 100%;
+    }
+
+    .contato textarea{
+        width: 100%;
+    }
+
+    .mapa{
+        margin-left: 0;
+    }
+
+    .mapa iframe{
+        
+        width: 100%;
+    }
+
+    .footer{
+        text-align: center;
+    }
+
+    .redes_sociais ul li{
+        float: none;
+        
+       
+        display: inline-block;
+    }
+
+    .redes_sociais ul li img{
+        margin: 0 auto auto auto 25px;
+    }
+}
+
+@media screen and (max-width: 600px){
+     #wpadminbar {
+         position: fixed !important; 
+    }
+
+  
+}
+
+@media only screen and (max-width: 430px){
+    .introducao {
+        
+        height:328px;
+        width: 100%;
+    }
+} 
